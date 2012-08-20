@@ -1,0 +1,2 @@
+<!-- replace_contents "#product-price .price.selling" -->
+<span class='special-price'>Special Price</span>
