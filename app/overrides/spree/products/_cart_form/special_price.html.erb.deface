@@ -1,2 +1,6 @@
 <!-- replace_contents "#product-price .price.selling" -->
-<span class='special-price'>Special Price</span>
+<% if @product.special_pricing %>
+  <span class='special-price'>Special Price</span>
+<% else %>
+  <%= number_to_currency @product.price %>
+<% end %>
